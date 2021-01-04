@@ -18,7 +18,7 @@ DDPG Description :
   - Actor : Approximate policy $\pi(s,a|\theta)$ $\to$ tune $\theta$
   - Critic : Evaluate the policy $\pi(s,a)$ as approximated by the actor by  approximating the Q=Value of the selected action. This approximation is done using the TD error Formula as :
 
-$r_{t+1} = \gamma * (v^{\pi}(S_{t+1}) - v^{\pi}(S_{t}))$
+<img src="https://render.githubusercontent.com/render/math?math=r_{t+1} = \gamma * (v^{\pi}(S_{t+1}) - v^{\pi}(S_{t}))">
 
 - In order to aid exploration, OU Noise (As mentioned in the original paper) is added to each action selection
 - Additionally, the following features are also used as mentioned in the original paper:
